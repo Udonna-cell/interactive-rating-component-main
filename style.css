@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(216, 12%, 54%);
+  --Medium-Grey: hsl(217, 12%, 27%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+@font-face {
+  font-family: Overpass;
+  src: url(https://fonts.google.com/specimen/Overpass);
+}
+
+body {
+  background: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+  font-family: Overpass;
+  font-size: 15px;
+}
+h:first-letter,
+p:first-letter,
+button:first-letter {
+  text-transform: uppercase;
+}
+h1 {
+  line-height: 56px;
+}
+p, span {
+  color: var(--Light-Grey);
+  font-size: 1em;
+  line-height: 1.3em;
+}
+section#container  {
+  background: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 16px;
+  color: hsl(0, 0%, 100%);
+  max-width: 350px;
+}
+section.thank-you  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.rated {
+  background: var(--Medium-Grey);
+  color: var(--Orange);
+  margin-top: 16px;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+div.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--Medium-Grey);
+  padding: 20px;
+}
+button {
+  background: var(--Orange);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 13px;
+  font-weight: 500;
+  font-size: 1.1em;
+  border-radius: 50px;
+  color: inherit;
+  margin: 10px auto;
+}
+button:disabled {
+  background: var(--Light-Grey) !important;
+  color: var(--White) !important;
+}
+div.rates {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 7px;
+  margin: 10px auto;
+}
+span.rate {
+  width: 25px;
+  height: 25px;
+  padding: 20px;
+  border-radius: 50px;
+  background: var(--Medium-Grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.rate:hover {
+  background: var(--Orange);
+  color: var(--White);
+}
+button:hover {
+  background: var(--White);
+  color: var(--Orange);
+}
+/*
+img {
+  width: 100%;
+  object-fit: cover;
+}
+*/
+.active {
+  color: var(--White) !important;
+  background: var(--Light-Grey) !important;
+}
